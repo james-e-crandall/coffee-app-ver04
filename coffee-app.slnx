@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="coffee-app.AppHost/coffee-app.AppHost.csproj" />
+  <Project Path="coffee-app.ServiceDefaults/coffee-app.ServiceDefaults.csproj" />
+</Solution>
