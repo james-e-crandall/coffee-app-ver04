@@ -1,21 +1,4 @@
-.wrapper {
-  display: grid;
-}
 
-.isHandset {
-  grid-template-columns: repeat(1, auto);
-  grid-auto-rows: auto;
-}
-
-.isTablet {
-  grid-template-columns: repeat(2, auto);
-  grid-auto-rows: auto;
-}
-
-.isWeb {
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-}
 
 .isHandset h1 {
   grid-column: span 1;

@@ -1,0 +1,57 @@
+.isHandset mat-toolbar {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  grid-column: span 1;
+}
+
+.isTablet mat-toolbar {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  grid-column: span 1;
+}
+
+.isWeb mat-toolbar {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  grid-column: span 3;
+}
+
+.isHandset .left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: left;
+}
+.isHandset .right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: right;
+}
+
+.isTablet .left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: left;
+}
+.isTablet .right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: right;
+}
+
+
+.isWeb .left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: left;
+}
+.isWeb .right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: right;
+}
