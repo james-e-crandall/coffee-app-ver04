@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { HeaderLayout } from '../header-layout/header-layout';
+import { FooterLayout } from '../footer-layout/footer-layout';
 
 @Component({
   selector: 'coffee-layout',
-  imports: [HeaderLayout],
+  imports: [HeaderLayout, FooterLayout],
   templateUrl: './layout.html',
   styleUrl: './layout.scss',
 })

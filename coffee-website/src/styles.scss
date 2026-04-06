@@ -4,6 +4,10 @@
 // Learn more about theming and how to use it for your application's
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
+@use './app/themes/32462f_theme-colors' as green-theme-colors;
+@use './app/themes/F4F629_theme-colors' as sun-theme-colors;
+@use './app/themes/F3901B_theme-colors' as orange-theme-colors;
+
 
 html {
   height: 100%;
@@ -41,7 +45,11 @@ body {
       box-sizing: border-box;
   }
 
-html { height: 100%; }
+html {
+  height: 100%;
+  @include mat.system-classes();
+}
+
 body {
   height: 100%;
   display: grid;
@@ -68,3 +76,41 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
 }
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.green-theme {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: green-theme-colors.$primary-palette,
+      tertiary: green-theme-colors.$tertiary-palette,
+    )
+  ));
+}
+
+.sun-theme {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: sun-theme-colors.$primary-palette,
+      tertiary: sun-theme-colors.$tertiary-palette,
+    )
+  ));
+}
+
+.orange-theme {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: orange-theme-colors.$primary-palette,
+      tertiary: orange-theme-colors.$tertiary-palette,
+    )
+  ));
+}
+
+

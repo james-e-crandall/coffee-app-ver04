@@ -1,0 +1,17 @@
+.isHandset mat-toolbar {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  grid-column: span 1;
+}
+
+.isTablet mat-toolbar {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  grid-column: span 1;
+}
+
+.isWeb mat-toolbar {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  grid-column: span 3;
+}

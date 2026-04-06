@@ -1,0 +1,13 @@
+<div class="wrapper" [class.isHandset]="screenService.isHandset()" [class.isTablet]="screenService.isTablet()"
+  [class.isWeb]="screenService.isWeb()">
+  @if(screenService.isHandset() || screenService.isTablet()){
+    <mat-toolbar>
+      <div class="mat-bg-primary-container">footer</div>
+    </mat-toolbar>
+  } @else {
+    <mat-toolbar>
+      <div class="mat-bg-primary-container">footer</div>
+    </mat-toolbar>
+  }
+</div>
+

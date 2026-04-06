@@ -1,0 +1,27 @@
+
+
+.parent {
+  display: grid;
+  place-items: center; /* Shorthand for horizontal and vertical centering */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+  width:100%;
+  max-width: 1440px;
+}
+
+.container > div {
+  height: 420px;
+}
+
+.two-column {
+  grid-column: span 2;
+}
+
+.center-content {
+  display: grid;
+  place-items: center; /* Centers both axes at once */
+}
