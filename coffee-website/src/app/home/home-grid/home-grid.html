@@ -1,5 +1,28 @@
 <div class="parent">
   <div class="container">
+    @for (item of homeGridItemList; track $index) {
+      @switch (item.type) {
+        @case ('image') {
+        <div class="img-wrapper">
+          <img ngSrc="images/sunset03.png" alt="sunset01" fill />
+        </div>
+        }
+        @case ('button') {
+          <div [class]="item.colorClass + ' ' + item.columnClass" class="mat-bg-primary-container center-content">
+            <p>{{item.description}}<button matButton="filled">{{item.title}}</button></p>
+          </div>
+        }
+        @default {
+          <div [class]="item.colorClass + ' ' + item.columnClass"  class="mat-bg-primary-container center-content">
+            <p>{{item.title}}</p>
+            <p>{{item.description}}</p>
+          </div>
+        }
+      }
+
+    }
+
+
     <div class="green-theme two-column mat-bg-primary-container center-content">
       <p>It's a great day for Coffee! <button matButton="filled">Start an order</button>
     </div>
@@ -40,10 +63,6 @@
     </div>
 
 
-
-    <!--
-
-    <div class="img-wrapper two-column"><img ngSrc="images/sunset03.png" alt="sunset01" fill /></div> -->
 
   </div>
 </div>
